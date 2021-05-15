@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MYGRAM/wwwroot/js/Index.js">
     <Files>
       <File FileName="MYGRAM/Startup.cs" Line="26" Column="76" />
-      <File FileName="MYGRAM/Views/Home/Index.cshtml" Line="18" Column="26" />
+      <File FileName="MYGRAM/Views/Home/Index.cshtml" />
       <File FileName="MYGRAM/Views/Home/Privacy.cshtml" />
       <File FileName="MYGRAM/Views/Shared/_Layout.cshtml" />
       <File FileName="MYGRAM/wwwroot/js/site.js" />
-      <File FileName="MYGRAM/wwwroot/js/Index.js" Line="3" Column="35" />
+      <File FileName="MYGRAM/wwwroot/js/Index.js" Line="8" Column="67" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
