@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYGRAM", "MYGRAM\MYGRAM.csproj", "{116E6A14-F1CB-4E39-8CA7-EF31FE244099}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{116E6A14-F1CB-4E39-8CA7-EF31FE244099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116E6A14-F1CB-4E39-8CA7-EF31FE244099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116E6A14-F1CB-4E39-8CA7-EF31FE244099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116E6A14-F1CB-4E39-8CA7-EF31FE244099}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBC175B6-6D86-4168-BE65-1BBEE1C96DB1}
+	EndGlobalSection
+EndGlobal
