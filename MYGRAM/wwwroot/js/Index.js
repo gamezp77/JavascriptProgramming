@@ -1,17 +1,27 @@
-﻿$("#MainContainer").append("<br><span>My Gram</span>");
+﻿var divContainer = $("#MainContainer");
+$("<span></span>").text("My Gram").css("margin-right", "10px").appendTo(divContainer);
+$("<button></button>").text("Log In").appendTo(divContainer);
+$("<button></button>").text("Sing Up").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+$("<span></span>").text("Image 1").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Image 2").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Image 3").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Image 4").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Image 5").css("margin-right", "10px").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+$("<span></span>").text("About").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Blog").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Jobs").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("Help").css("margin-right", "10px").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+$("<span></span>").text("English").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("2021").css("margin-right", "10px").appendTo(divContainer);
+$("<span></span>").text("MyGram").css("margin-right", "10px").appendTo(divContainer);
 
-$("#ButtonContainer").append("<br><span>Image 1  Image 2  Image 3 Image 3 Image 4 Image 5</span>");
 
 
-$("#FooterContainer").append("<br><span>About Blog Jobs Help</span>");
-
-$("#Footer2Container").append("<span>English 2021 MyGram</span>");
 
 
-$("Button").on("click", function () {
-    alert("user and password");
-});
 
-$("Button2").on("click", function () {
-    alert("you have logged in");
-});
