@@ -25,9 +25,19 @@ $("#LogIn").click(function () {
 });
 
 $("#SignUp").click(function () {
-    $("<span></span>").text("User").css("margin-right", "10px").appendTo(divContainer);
-    $("<span></span>").text("Password").css("margin-right", "10px").appendTo(divContainer);
+$("#FormContainer").show();  
 });
+$("<br>").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
+
+$("#ResgisterButton").click(function () {
+    var userValue = $("#UserInput").val();
+    var passwordValue = $("#PasswordInput").val();
+
+    alert("The user is: " + userValue + ", and the password is: " + passwordValue);
+});
+$("#FormContainer").hide();
+
 
 
 
