@@ -30,15 +30,28 @@ $("#FormContainer").show();
 $("<br>").appendTo(divContainer);
 $("<br>").appendTo(divContainer);
 
-$("#ResgisterButton").click(function () {
-    var userValue = $("#UserInput").val();
-    var passwordValue = $("#PasswordInput").val();
-
-    alert("The user is: " + userValue + ", and the password is: " + passwordValue);
-});
 $("#FormContainer").hide();
 
+$(document).ready(function () {
+    $('form[name="registration"]').validate({
+        rules: {
+            UserInput: { required: true },
+            PasswordInput: {required:true}
+        },
+        messages: {
+            UserInput: "User is required",
+            PasswordInput: "Password is required"
+        },
+        submitHandler: function (form) {
+            //form.submit();
 
+            var userValue = $("#UserInput").val();
+            var passwordValue = $("#PasswordInput").val();
+
+            alert("The user is: " + userValue + ", and the password is: " + passwordValue);
+        }
+    });
+});
 
 
 

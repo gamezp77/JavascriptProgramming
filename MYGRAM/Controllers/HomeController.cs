@@ -22,6 +22,7 @@ namespace MYGRAM.Controllers
         {
             return View();
         }
+       
 
         public IActionResult Privacy()
         {
