@@ -48,7 +48,18 @@ $(document).ready(function () {
             var userValue = $("#UserInput").val();
             var passwordValue = $("#PasswordInput").val();
 
-            alert("The user is: " + userValue + ", and the password is: " + passwordValue);
+            $.when($.ajax({
+                url: "Home/Register",
+                type: "POST",
+                data: {
+                    UserInput: userValue,
+                    PasswordInput: passwordValue
+                }
+            })).then(function (data) {
+                if (data == true) {
+                    alert("User registered");
+                }
+            });
         }
     });
 });

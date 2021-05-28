@@ -29,6 +29,13 @@ namespace MYGRAM.Controllers
             return View();
         }
 
+        public bool Register(string UserInput, string PasswordInput)
+        {
+            string result = $"The user is {UserInput} and the password is {PasswordInput}";
+            return true;
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
