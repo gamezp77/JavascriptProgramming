@@ -58,7 +58,15 @@ $(document).ready(function () {
                 datatype: "json"
             })).then(function (data) {
                 if (data != null && data.registerMessage!="") {
-                alert(data.registerMessage);
+                    $.toast({
+                        heading: "Sucess",
+                        text: 'I did it correct!',
+                        icon: "sucess",
+                        loader: true,
+                        loaderBg: "pink",
+                        position: "bottom-right",
+                        stack: 3
+                    });
                 }
             });
         }
