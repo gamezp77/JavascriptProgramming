@@ -5,19 +5,28 @@
 <style>
     button {margin-right : 10px;
     }
+
+    .ui-widget-overlay{
+        background-color: gray;
+        opacity:.8;
+    }
 </style>
 <div id="MainContainer" class="text-center"></div>
 
 
-<form id="FormContainer" name="registration">
-    <label>User</label>
-    <input type="text" id="UserInput" placeholder="Add user name here" name="UserInput"/>
-    <br/>
-    <label>Password</label>
-    <input type="password" id="PasswordInput" placeholder="Add password here" name="PasswordInput"/>
-    <br/>
-    <button id="RegisterButton">Register</button>
-</form>
+    <form id="FormContainer" name="registration">
+        <label>User</label>
+        <input type="text" id="UserInput" placeholder="Add user name here" name="UserInput" />
+        <br />
+        <label>Password</label>
+        <input type="password" id="PasswordInput" placeholder="Add password here" name="PasswordInput" />
+        <br />
+        <button id="RegisterButton">Register</button>
+    </form>
+
+    <div id="FormDialog" title="Register User Confirmation">
+        <span>Are you sure you want to create the user?</span>
+    </div>
 
 
     @section Scripts {

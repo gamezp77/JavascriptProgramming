@@ -25,7 +25,7 @@ $("#LogIn").click(function () {
 });
 
 $("#SignUp").click(function () {
-$("#FormContainer").show();  
+    $("#FormContainer").show();  
 });
 $("<br>").appendTo(divContainer);
 $("<br>").appendTo(divContainer);
@@ -45,10 +45,22 @@ $(document).ready(function () {
         submitHandler: function (form) {
             //form.submit();
 
-            var userValue = $("#UserInput").val();
-            var passwordValue = $("#PasswordInput").val();
+       
 
-            $.when($.ajax({
+            $("#FormDialog").dialog('open');
+
+            
+        }
+    });
+    $("#FormDialog").dialog({
+        autoOpen: false,
+        modal: true,
+        buttons: {
+            OK: function () {
+                var userValue = $("#UserInput").val();
+                var passwordValue = $("#PasswordInput").val();
+
+                $.when($.ajax({
                 url: "Home/Register",
                 type: "POST",
                 data: {
@@ -60,17 +72,24 @@ $(document).ready(function () {
                 if (data != null && data.registerMessage!="") {
                     $.toast({
                         heading: "Sucess",
-                        text: 'I did it correct!',
+                        text: data.registerMessage,
                         icon: "sucess",
                         loader: true,
-                        loaderBg: "pink",
+                        loaderBg: "magenta",
                         position: "bottom-right",
                         stack: 3
                     });
                 }
+                $("#FormDialog").dialog('close');
             });
-        }
-    });
+            },
+            Cancel: function () {
+                $("#FormDialog").dialog('close');
+
+            }
+
+            }
+        });
 });
 
 
