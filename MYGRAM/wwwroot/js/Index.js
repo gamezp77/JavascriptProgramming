@@ -54,10 +54,11 @@ $(document).ready(function () {
                 data: {
                     UserInput: userValue,
                     PasswordInput: passwordValue
-                }
+                },
+                datatype: "json"
             })).then(function (data) {
-                if (data == true) {
-                    alert("User registered");
+                if (data != null && data.registerMessage!="") {
+                alert(data.registerMessage);
                 }
             });
         }

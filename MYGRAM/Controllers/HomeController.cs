@@ -29,10 +29,15 @@ namespace MYGRAM.Controllers
             return View();
         }
 
-        public bool Register(string UserInput, string PasswordInput)
+        public IActionResult Register(string UserInput, string PasswordInput)
         {
-            string result = $"The user is {UserInput} and the password is {PasswordInput}";
-            return true;
+            User user = new User();
+            user.UserInput = UserInput;
+            user.PasswordInput = PasswordInput;
+            user.RegisterMessage = $"The user is {UserInput} and the password is {PasswordInput}";
+            
+
+            return Json(user);
         }
 
 

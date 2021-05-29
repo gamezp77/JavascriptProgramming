@@ -1,25 +1,27 @@
 ﻿<Properties StartupConfiguration="{116E6A14-F1CB-4E39-8CA7-EF31FE244099}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MYGRAM/wwwroot/js/Index.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MYGRAM/Controllers/HomeController.cs">
     <Files>
       <File FileName="MYGRAM/Views/Home/Index.cshtml" Line="19" Column="13" IsPinned="True" />
-      <File FileName="MYGRAM/wwwroot/js/Index.js" Line="56" Column="49" />
-      <File FileName="MYGRAM/Controllers/HomeController.cs" Line="32" Column="68" />
+      <File FileName="MYGRAM/wwwroot/js/Index.js" />
+      <File FileName="MYGRAM/Controllers/HomeController.cs" Line="38" Column="29" />
+      <File FileName="MYGRAM/Models/User.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MYGRAM" expanded="True">
             <Node name="MYGRAM" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="js" expanded="True">
-                  <Node name="Index.js" selected="True" />
-                </Node>
+                <Node name="js" expanded="True" />
                 <Node name="lib" expanded="True">
                   <Node name="jquery" expanded="True">
                     <Node name="dist" expanded="True" />
