@@ -25,12 +25,11 @@ $("#LogIn").click(function () {
 });
 
 $("#SignUp").click(function () {
-    $("#FormContainer").show();  
+    $("#Dialog").dialog("open");  
 });
-$("<br>").appendTo(divContainer);
-$("<br>").appendTo(divContainer);
 
-$("#FormContainer").hide();
+$("<br>").appendTo(divContainer);
+$("<br>").appendTo(divContainer);
 
 $(document).ready(function () {
     $('form[name="registration"]').validate({
@@ -52,6 +51,12 @@ $(document).ready(function () {
             
         }
     });
+
+    $("#Dialog").dialog({
+        autoOpen: false,
+        modal: true
+    });
+
     $("#FormDialog").dialog({
         autoOpen: false,
         modal: true,
@@ -75,7 +80,7 @@ $(document).ready(function () {
                         text: data.registerMessage,
                         icon: "sucess",
                         loader: true,
-                        loaderBg: "magenta",
+                        loaderBg: "blue",
                         position: "bottom-right",
                         stack: 3
                     });
