@@ -350,6 +350,3 @@
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.dll
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.pdb
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.genruntimeconfig.cache
-/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error 2.cshtml.g.cs
-/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout 2.cshtml.g.cs
-/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial 2.cshtml.g.cs

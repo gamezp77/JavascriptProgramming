@@ -1,4 +1,5 @@
 ﻿var divContainer = $("#MainContainer");
+var dataTable = null;
 $("<span></span>").text("My Gram").css("margin-right", "10px").appendTo(divContainer);
 $("<button></button>").attr("id", "LogIn").text("Log In").appendTo(divContainer);
 $("<button></button>").attr("id", "SignUp").text("Sign Up").appendTo(divContainer);
@@ -6,6 +7,7 @@ $("<br>").appendTo(divContainer);
 $("<br>").appendTo(divContainer);
 var imageContainer = $("<div></div>").attr("id", "ImageContainer").appendTo(divContainer);
 var table = $("<table></table>").appendTo(imageContainer);
+$("<thead><th></th><th></th><th></th><th></th><th></th></thead>").appendTo(table);
 var tbody = $("<tbody></tbody>").attr("id", "ImageBodyContainer").appendTo(table);
 $("<br>").appendTo(divContainer);
 $("<br>").appendTo(divContainer);
@@ -99,28 +101,27 @@ $(document).ready(function () {
         method: "GET"
     })).then(function (data) {
         var image = null;
-        var tbody = $("#ImageBodyContainer");
-        var tr = $("<tr></tr>");
-        var td = null;
         var counter = 0;
+        var rows = [];
+        var row = [];
 
        
         for (var element in data) {
             if (counter == 5) {
-                tbody.append(tr);
-                tr = $("<tr></tr>");
+                rows.push(row);
+                row = [];
                 counter = 0;
             }
             image = data[element];
-            td = $("<td></td>");
-            $("<span></span>").text(image.imageAlt)
-                .css("margin-right", "10px").appendTo(td);
-            td.appendTo(tr);
-            tr.appendTo(tbody);
 
+            row.push($("<span></span>").text(image.imageAlt)
+                     .css("margin-right", "10px").prop("outerHTML"));
+            
             counter++;
         }
 
-        tbody.appendTo(table);
+        rows.push(row);
+        
+        $(table).DataTable({ data: rows});
      });
 });
