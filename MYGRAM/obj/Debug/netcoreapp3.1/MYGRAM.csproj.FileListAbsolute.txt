@@ -322,7 +322,6 @@
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
-/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.csprojAssemblyReference.cache
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.AssemblyInfoInputs.cache
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.AssemblyInfo.cs
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.csproj.CoreCompileInputs.cache
@@ -350,3 +349,5 @@
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.dll
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.pdb
 /Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.genruntimeconfig.cache
+/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/Razor/Views/Home/Orders.cshtml.g.cs
+/Users/gamezjr/Desktop/Javascript_Programming/MYGRAM/MYGRAM/obj/Debug/netcoreapp3.1/MYGRAM.csproj.AssemblyReference.cache

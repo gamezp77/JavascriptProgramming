@@ -1,19 +1,22 @@
 ﻿<Properties StartupConfiguration="{116E6A14-F1CB-4E39-8CA7-EF31FE244099}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MYGRAM/wwwroot/js/Index.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MYGRAM/Controllers/HomeController.cs">
     <Files>
-      <File FileName="MYGRAM/wwwroot/js/Index.js" Line="102" Column="26" />
-      <File FileName="MYGRAM/Controllers/HomeController.cs" />
+      <File FileName="MYGRAM/Views/Home/Index.cshtml" Line="31" Column="1" />
+      <File FileName="MYGRAM/wwwroot/js/Index.js" Line="10" Column="51" />
+      <File FileName="MYGRAM/Controllers/HomeController.cs" Line="34" Column="10" />
       <File FileName="MYGRAM/Models/User.cs" />
       <File FileName="MYGRAM/Models/Image.cs" />
-      <File FileName="MYGRAM/Views/Home/Index.cshtml" />
       <File FileName="MYGRAM/Views/Shared/_Layout.cshtml" />
+      <File FileName="MYGRAM/Views/Home/Orders.cshtml" Line="8" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MYGRAM" expanded="True">
             <Node name="MYGRAM" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
@@ -21,9 +24,7 @@
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True">
-                  <Node name="Index.js" selected="True" />
-                </Node>
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>

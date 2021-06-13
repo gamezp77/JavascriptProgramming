@@ -28,8 +28,11 @@ namespace MYGRAM.Controllers
         {
             return View();
         }
-
-        public IActionResult Register(string UserInput, string PasswordInput)
+        public IActionResult Orders()
+        {
+            return View();
+        }
+            public IActionResult Register(string UserInput, string PasswordInput)
         {
             User user = new User();
             user.UserInput = UserInput;
