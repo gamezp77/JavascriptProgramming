@@ -114,8 +114,8 @@ $(document).ready(function () {
             }
             image = data[element];
 
-            row.push($("<span></span>").text(image.imageAlt)
-                     .css("margin-right", "10px").prop("outerHTML"));
+            row.push($("<span class='AddIcons'></span>").text(image.imageAlt)
+                .css("margin-right", "10px").attr("data-image", JSON.stringify(image)).prop("outerHTML"));
             
             counter++;
         }
@@ -125,3 +125,16 @@ $(document).ready(function () {
         $(table).DataTable({ data: rows});
      });
 });
+$(table).on("click", ".AddIcons", function () {
+    var selectedImage = $(this).data("image");
+
+    $.toast({
+        heading: 'Success',
+        text: " you liked the image",
+        loader: true,
+        loaderBg: "red",
+        icon: "success"
+
+    });
+});
+   
